@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>El Bohemio · Bar &amp; Restaurante en Villa Urquiza</title>
+<meta name="description" content="La casona de Donado 1802 en DoHo: cocina de autor con alma de bodegón, la pizarra del día, vermú en la vereda y reservas online.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="El Bohemio">
+<meta property="og:url" content="https://el-bohemio-urquiza.vercel.app/">
+<meta property="og:title" content="El Bohemio · Bar &amp; Restaurante en Villa Urquiza">
+<meta property="og:description" content="La casona de Donado 1802: pizarra del día, carta y reservas online.">
+<meta property="og:image" content="https://el-bohemio-urquiza.vercel.app/img/og.jpg?v=1">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="El Bohemio · Tu mesa en la casona de Donado 1802">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://el-bohemio-urquiza.vercel.app/img/og.jpg?v=1">
+<meta name="theme-color" content="#FBF6EE">
+<link rel="icon" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<script>
+  (function(){var d=document.documentElement;d.classList.add('js');
+  if(!matchMedia('(prefers-reduced-motion: reduce)').matches){d.classList.add('con-intro');}
+  setTimeout(function(){d.classList.add('listo');d.classList.remove('intro-bloq');},5000);})();
+</script>
+<link rel="preload" href="fonts/fraunces-latin-900-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/ultra-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/hero-800.webp" as="image" media="(max-width: 899px)">
+<link rel="preload" href="img/hero-1440.webp" as="image" media="(min-width: 900px)">
+<link rel="stylesheet" href="css/fonts.css?v=1" data-kit-fonts>
+<link rel="stylesheet" href="kit/kit.css?v=1">
+<link rel="stylesheet" href="css/style.css?v=1">
+</head>
+<body>
+
+<div id="intro" aria-hidden="true">
+  <svg class="intro__luces" viewBox="0 0 1200 70" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 6 Q600 90 1200 6" fill="none" stroke="#E9C766" stroke-width="1.4" vector-effect="non-scaling-stroke"/>
+  </svg>
+  <div class="intro__bulbs" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="intro__marca">
+    <img src="img/logo.png" alt="" width="538" height="92" class="intro__logo">
+    <span class="intro__sub">DONADO 1802 · DESDE 2014</span>
+  </div>
+  <div class="intro__hoja intro__hoja--izq"><span></span></div>
+  <div class="intro__hoja intro__hoja--der"><span></span></div>
+</div>
+
+<header class="hdr" id="hdr">
+  <div class="hdr__izq">
+    <a href="#inicio" class="hdr__logo" aria-label="El Bohemio, inicio"><img src="img/logo.png" alt="El Bohemio" width="538" height="92"></a>
+    <nav class="hdr__nav" aria-label="Secciones">
+      <a href="#carta">Carta</a>
+      <a href="#agenda">Agenda</a>
+      <a href="#mercado">Mercado</a>
+      <a href="#casona">La casona</a>
+    </nav>
+  </div>
+  <div class="hdr__der">
+    <button class="btn btn--verde btn--sm" type="button" data-kit-open="reservas">Reservar</button>
+    <button class="hdr__burger" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="menu" id="menu" hidden>
+  <nav aria-label="Menú">
+    <a href="#pizarra">Pizarra de hoy</a>
+    <a href="#carta">Carta</a>
+    <a href="#casona">La casona</a>
+    <a href="#agenda">Agenda</a>
+    <a href="#mercado">Mercado Bohemio</a>
+    <a href="#reservar">Reservas y horarios</a>
+  </nav>
+  <a class="menu__wa" href="https://wa.me/5491131611584" target="_blank" rel="noopener">WhatsApp 11-3161-1584</a>
+</div>
+
+<main>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="hero__texto">
+    <p class="kicker hero__in" style="--d:0">Donado 1802 · DoHo · Desde 2014</p>
+    <h1 class="hero__titulo"><span class="linea"><span>Pasá, la mesa</span></span> <span class="linea"><span>ya está puesta</span></span></h1>
+    <p class="hero__bajada hero__in" style="--d:3">Cocina de autor con alma de bodegón en la casona de la esquina. Vermú en la vereda, vinos de bodegas amigas y una pizarra que cambia todos los días.</p>
+    <div class="hero__ctas hero__in" style="--d:4">
+      <button class="btn btn--verde" type="button" data-kit-open="reservas">Reservá tu mesa</button>
+      <a class="btn btn--linea" href="#carta">Ver la carta</a>
+    </div>
+    <a class="hero__pizarra hero__in" style="--d:5" href="#pizarra">
+      <span class="hero__pizarra-txt">
+        <span class="hero__pizarra-k">Pizarra de hoy · <span data-kit-destacado="pizarra.titulo">Menú ejecutivo</span></span>
+        <span class="hero__pizarra-plato" id="heroPlato">Lomo saltado con arroz · $30.000</span>
+      </span>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+    </a>
+  </div>
+  <div class="hero__foto">
+    <picture>
+      <source media="(min-width: 900px)" srcset="img/hero-1440.webp">
+      <img src="img/hero-800.webp" alt="La casona de Donado 1802 al atardecer, con la puerta de hierro verde y las letras EL BOHEMIO arriba" width="800" height="1000" fetchpriority="high" decoding="async" data-kit-ph="no">
+    </picture>
+    <p class="estado hero__in" style="--d:6" id="estadoHero"><span class="estado__dot"></span><span class="estado__txt">Donado 1802 · Villa Urquiza</span></p>
+  </div>
+</section>
+
+<div class="guirnalda" data-r-luz aria-hidden="true"><svg viewBox="0 0 1440 56" preserveAspectRatio="none"><path d="M0 4 Q720 70 1440 4" fill="none" stroke="#2A1F17" stroke-width="1.4" vector-effect="non-scaling-stroke"/></svg><i style="left:4.0%;top:11px;--n:0"></i><i style="left:13.2%;top:21px;--n:1"></i><i style="left:22.4%;top:29px;--n:2"></i><i style="left:31.6%;top:35px;--n:3"></i><i style="left:40.8%;top:38px;--n:4"></i><i style="left:50.0%;top:39px;--n:5"></i><i style="left:59.2%;top:38px;--n:6"></i><i style="left:68.4%;top:35px;--n:7"></i><i style="left:77.6%;top:29px;--n:8"></i><i style="left:86.8%;top:21px;--n:9"></i><i style="left:96.0%;top:11px;--n:10"></i></div>
+
+<!-- PIZARRA -->
+<section class="sec pizarra" id="pizarra">
+  <div class="wrap pizarra__grid">
+    <div class="pizarra__intro" data-r>
+      <p class="kicker">Lo que sale hoy de la cocina</p>
+      <h2 class="titulo">La pizarra de hoy</h2>
+      <p class="texto">Cambia todos los días, como la de la vereda. <span class="solo-touch">Tocá un plato para verlo.</span><span class="solo-mouse">Pasá el mouse por un plato para verlo.</span></p>
+    </div>
+    <figure class="polaroid" data-r>
+      <div class="polaroid__foto"><img id="pizarraFoto" src="img/carta/052.webp" alt="" width="820" height="1025" loading="lazy" decoding="async"></div>
+      <figcaption id="pizarraCap">Lomo saltado con arroz</figcaption>
+    </figure>
+    <div class="tablero" data-r>
+      <div class="tablero__head">
+        <span class="tablero__k">Pizarra de hoy</span>
+        <span class="tablero__t" data-kit-destacado="pizarra.titulo">Menú ejecutivo</span>
+        <span class="tablero__p"><small>Precio del menú</small><span data-kit-destacado="pizarra.precio">Consultar</span></span>
+      </div>
+      <div class="tablero__lista" data-kit="carta" id="pizarra-carta" data-kit-categorias="pizarra" data-kit-pedir="false"></div>
+      <p class="tablero__nota" data-kit-destacado="pizarra.nota">Mediodías de lunes a viernes, menos los martes · 12:00 a 16:00 hs</p>
+    </div>
+  </div>
+</section>
+
+<!-- CARTA -->
+<section class="sec carta" id="carta">
+  <div class="wrap">
+    <div class="carta__head" data-r>
+      <p class="kicker">Comer · Beber</p>
+      <h2 class="titulo">La carta</h2>
+      <p class="texto">Cocina latinoamericana de autor, pescados del día y clásicos de bodegón. Una sección por vez para no marearte.</p>
+    </div>
+    <div class="carta__cuerpo" data-r>
+      <div class="carta__kit" data-kit="carta" id="carta-local" data-kit-categorias="picar,mar,arroces,carnes,postres,vermu,vinos" data-kit-pedir="false"></div>
+      <aside class="carta__foto" aria-hidden="true">
+        <div class="carta__foto-marco"><img id="cartaFoto" src="img/carta/050.webp" alt="" width="820" height="1025" loading="lazy" decoding="async"></div>
+        <p id="cartaFotoCap">Ceviche</p>
+      </aside>
+    </div>
+    <div class="carta__pie" data-r>
+      <a class="btn btn--linea" href="carta/">Abrir la carta en el celu</a>
+      <span>Es la misma que ves en el QR de las mesas, siempre actualizada.</span>
+    </div>
+  </div>
+</section>
+
+<!-- CASONA: DE DÍA Y DE NOCHE -->
+<section class="sec casona" id="casona" data-momento="dia">
+  <div class="wrap">
+    <div class="casona__head" data-r>
+      <div>
+        <p class="kicker" id="casonaKicker">Mediodía en la vereda</p>
+        <h2 class="titulo">La casona, de día y de noche</h2>
+        <p class="texto">Una casona reciclada en la esquina de Donado y La Pampa, a pasos del Parque Donado Holmberg. De día, sol en la vereda y menú ejecutivo; de noche, guirnaldas prendidas, vermú y copas.</p>
+      </div>
+      <button class="llave" type="button" id="llave" aria-pressed="false">
+        <span class="llave__lampara" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2V16h5v-.1c0-.8.4-1.5 1-2A6 6 0 0 0 12 3Z"/></svg></span>
+        <span class="llave__txt">Ver de noche</span>
+      </button>
+    </div>
+    <div class="galeria fila" data-r>
+      <figure class="g g1"><img class="g__d" src="img/casa/007-m.webp" srcset="img/casa/007-m.webp 640w, img/casa/007.webp 1066w" sizes="(min-width: 900px) 34vw, 78vw" alt="La puerta de hierro y la pizarra del lomo saltado al sol" width="1066" height="1421" loading="lazy" decoding="async"><img class="g__n" src="img/casa/109-m.webp" srcset="img/casa/109-m.webp 640w, img/casa/109.webp 1080w" sizes="(min-width: 900px) 34vw, 78vw" alt="La casona de noche con las guirnaldas prendidas y la vereda llena" width="1080" height="1350" loading="lazy" decoding="async"></figure>
+      <figure class="g g2"><img class="g__d" src="img/casa/008-m.webp" srcset="img/casa/008-m.webp 640w, img/casa/008.webp 1100w" sizes="(min-width: 900px) 22vw, 78vw" alt="La vereda al mediodía con las sillas de vermú Lunfa" width="1100" height="1954" loading="lazy" decoding="async"><img class="g__n" src="img/casa/003-m.webp" srcset="img/casa/003-m.webp 640w, img/casa/003.webp 1100w" sizes="(min-width: 900px) 22vw, 78vw" alt="El salón art déco de noche, con lámpara de flecos" width="1100" height="1467" loading="lazy" decoding="async"></figure>
+      <figure class="g g3"><img class="g__d" src="img/casa/040-m.webp" srcset="img/casa/040-m.webp 640w, img/casa/040.webp 1100w" sizes="(min-width: 900px) 26vw, 78vw" alt="Mesa puesta junto a la ventana" width="1100" height="1375" loading="lazy" decoding="async"><img class="g__n" src="img/casa/116-m.webp" srcset="img/casa/116-m.webp 640w, img/casa/116.webp 1080w" sizes="(min-width: 900px) 26vw, 78vw" alt="Cuadro pop sobre el sillón rojo del salón" width="1080" height="1349" loading="lazy" decoding="async"></figure>
+      <figure class="g g4"><img class="g__d" src="img/casa/025-m.webp" srcset="img/casa/025-m.webp 640w, img/casa/025.webp 1100w" sizes="(min-width: 900px) 22vw, 78vw" alt="Las letras doradas de la vidriera" width="1100" height="1956" loading="lazy" decoding="async"><img class="g__n" src="img/casa/139-m.webp" srcset="img/casa/139-m.webp 640w, img/casa/139.webp 1080w" sizes="(min-width: 900px) 22vw, 78vw" alt="La barra con la escalera y las botellas" width="1080" height="1350" loading="lazy" decoding="async"></figure>
+      <figure class="g g5"><img class="g__d" src="img/casa/044-m.webp" srcset="img/casa/044-m.webp 640w, img/casa/044.webp 1100w" sizes="(min-width: 900px) 30vw, 78vw" alt="Ventana con vitral y mesas de mármol" width="1100" height="1368" loading="lazy" decoding="async"><img class="g__n" src="img/casa/135-m.webp" srcset="img/casa/135-m.webp 640w, img/casa/135.webp 1080w" sizes="(min-width: 900px) 30vw, 78vw" alt="La esquina rosa iluminada de noche" width="1080" height="810" loading="lazy" decoding="async"></figure>
+      <figure class="g g6"><img class="g__d" src="img/casa/027-m.webp" srcset="img/casa/027-m.webp 640w, img/casa/027.webp 1082w" sizes="(min-width: 900px) 22vw, 78vw" alt="Mesas del salón con el cuadro de la casa" width="1082" height="1918" loading="lazy" decoding="async"><img class="g__n" src="img/casa/128-m.webp" srcset="img/casa/128-m.webp 640w, img/casa/128.webp 1080w" sizes="(min-width: 900px) 22vw, 78vw" alt="Flores sobre la mesa y la pared que dice Compartí un rato" width="1080" height="1351" loading="lazy" decoding="async"></figure>
+    </div>
+  </div>
+</section>
+
+<!-- AGENDA -->
+<section class="sec agenda" id="agenda">
+  <div class="wrap">
+    <div class="agenda__head" data-r>
+      <p class="kicker">Copas, bodegas y noches especiales</p>
+      <h2 class="titulo">Agenda bohemia</h2>
+      <p class="texto">Degustaciones con bodegas amigas, la Semana del Vermú, el Martini Week y una noche especial el 12 de cada mes. <span class="solo-touch">Deslizá el talón para sacar tu entrada.</span><span class="solo-mouse">Arrastrá el talón o hacé clic para sacar tu entrada.</span></p>
+    </div>
+    <div class="tickets fila" data-r>
+      <article class="ticket ticket--destacado">
+        <div class="ticket__cuerpo">
+          <span class="ticket__k">Jueves 12 de noviembre · 19:00 hs</span>
+          <h3 class="ticket__t">Noche del 12</h3>
+          <p class="ticket__d">Degustación con [BODEGA INVITADA], platitos de la cocina y música en vivo.</p>
+          <p class="ticket__m"><span>Cupo 30</span><span>[PRECIO]</span></p>
+        </div>
+        <button class="talon" type="button" data-talon="reserva" data-fecha="2026-11-12" data-hora="19:00"><span class="talon__txt">Guardame un lugar</span><span class="talon__ico" aria-hidden="true">↓</span></button>
+      </article>
+      <article class="ticket">
+        <div class="ticket__cuerpo">
+          <span class="ticket__k">Fechas durante el año</span>
+          <h3 class="ticket__t">Degustación de bodega</h3>
+          <p class="ticket__d">5 vinos especialmente seleccionados, platitos para acompañar y descuentos para seguir la noche.</p>
+          <p class="ticket__m"><span>Cupo limitado</span><span>Próxima: [FECHA]</span></p>
+        </div>
+        <button class="talon" type="button" data-talon="wa" data-msg="Hola Bohemio! Quiero que me avisen de la próxima degustación de bodega."><span class="talon__txt">Avisame la próxima</span><span class="talon__ico" aria-hidden="true">↓</span></button>
+      </article>
+      <article class="ticket">
+        <div class="ticket__cuerpo">
+          <span class="ticket__k">Todos los marzos</span>
+          <h3 class="ticket__t">Semana del Vermú</h3>
+          <p class="ticket__d">Con Vermú Lunfa: clásico y rosado spritz, promos en la vereda y una semana entera de vermucitos.</p>
+          <p class="ticket__m"><span>21 de marzo · Día del Vermú</span></p>
+        </div>
+        <button class="talon" type="button" data-talon="wa" data-msg="Hola Bohemio! Avísenme cuando arranque la Semana del Vermú."><span class="talon__txt">Avisame</span><span class="talon__ico" aria-hidden="true">↓</span></button>
+      </article>
+      <article class="ticket">
+        <div class="ticket__cuerpo">
+          <span class="ticket__k">Todos los junios</span>
+          <h3 class="ticket__t">Martini Week</h3>
+          <p class="ticket__d">Un Martini especial pensado para maridar con nuestras croquetas de choclo ahumado.</p>
+          <p class="ticket__m"><span>Pocos días al año</span></p>
+        </div>
+        <button class="talon" type="button" data-talon="wa" data-msg="Hola Bohemio! Avísenme cuando vuelva el Martini Week."><span class="talon__txt">Avisame</span><span class="talon__ico" aria-hidden="true">↓</span></button>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- MERCADO -->
+<section class="sec mercado" id="mercado">
+  <div class="wrap mercado__grid">
+    <div class="mercado__intro" data-r>
+      <p class="kicker">Para llevar</p>
+      <h2 class="titulo">Mercado Bohemio</h2>
+      <p class="texto">Fiambres, quesos y platos de la casa para disfrutar en tu mesa. Armá tu canasta y pasala a buscar por Donado 1802.</p>
+      <p class="mercado__nota">Los precios te los confirmamos por WhatsApp antes de prepararlo.</p>
+      <button class="btn btn--linea" type="button" data-kit-open="carrito">Ver mi canasta</button>
+    </div>
+    <div class="mercado__estante" data-kit="carta" id="mercado-carta" data-kit-categorias="mercado" data-r></div>
+  </div>
+</section>
+
+<!-- VERMÚ -->
+<section class="sec vermu" id="vermu">
+  <div class="wrap vermu__grid">
+    <figure class="vermu__arco" data-r>
+      <img src="img/carta/058.webp" alt="Botella de vermú Lunfa, vasos con naranja y sifones azules sobre la mesa" width="820" height="905" loading="lazy" decoding="async">
+    </figure>
+    <div class="vermu__txt" data-r>
+      <p class="kicker kicker--oro">Vermú ahora se dice Lunfa</p>
+      <h2 class="titulo">La hora del vermú</h2>
+      <p class="texto">Vermú Lunfa con soda de sifón, jarritas para compartir y la vereda llena. Las promos cambian con la temporada: miralas en la pizarra de la puerta.</p>
+      <p class="texto">Y para la noche, etiquetas de bodegas amigas que pasan a contarnos sus vinos: Altos del Palmar, Biplano, Caro, Viña Alta, Familia Cassone.</p>
+      <div class="vermu__mini">
+        <img src="img/carta/045-t.webp" alt="Jarrita vermutera con vasos de Cinzano" width="240" height="427" loading="lazy" decoding="async">
+        <img src="img/carta/009-t.webp" alt="Sirviendo un vermú con hielo y naranja" width="240" height="426" loading="lazy" decoding="async">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NOSOTROS -->
+<section class="sec nosotros" id="nosotros">
+  <div class="wrap nosotros__grid">
+    <figure class="nosotros__foto" data-r>
+      <img src="img/casa/006-m.webp" srcset="img/casa/006-m.webp 640w, img/casa/006.webp 1100w" sizes="(min-width: 900px) 40vw, 90vw" alt="El equipo de cocina en la puerta de la casona" width="1100" height="1467" loading="lazy" decoding="async">
+      <span class="sello" aria-hidden="true"><b>12</b><small>años · 2014</small></span>
+    </figure>
+    <div class="nosotros__txt" data-r>
+      <p class="kicker">Desde 2014</p>
+      <h2 class="titulo">Doce años en la esquina de Donado y La Pampa</h2>
+      <p class="texto">Una casona reciclada en el corredor gastronómico de DoHo, con cocina abierta, salón art déco y una vereda que se llena. Nos destacamos por la atención: profesional, con una sonrisa y desde el corazón.</p>
+      <ul class="datos">
+        <li><b>3.243</b><span>reseñas en Google</span></li>
+        <li><b>12</b><span>años en Urquiza</span></li>
+        <li><b>DoHo</b><span>en la nota de La Nación sobre el corredor</span></li>
+      </ul>
+      <a class="btn btn--linea" href="https://www.google.com/maps/search/?api=1&amp;query=El+Bohemio+Donado+1802+Buenos+Aires" target="_blank" rel="noopener">Ver las reseñas en Google</a>
+    </div>
+  </div>
+</section>
+
+<!-- RESERVAR -->
+<section class="sec reservar" id="reservar">
+  <div class="wrap reservar__grid">
+    <div class="reservar__info" data-r>
+      <p class="kicker">Reservas y horarios</p>
+      <h2 class="titulo">Tu mesa en la casona</h2>
+      <p class="texto">Elegí día, horario y cuántos son. Te confirmamos por WhatsApp.</p>
+      <dl class="horarios">
+        <div><dt>Lunes, miércoles, jueves y viernes</dt><dd>12:00 a 16:00 hs · 17:00 a 00:00 hs</dd></div>
+        <div><dt>Sábado</dt><dd>12:00 a 00:00 hs</dd></div>
+        <div><dt>Domingo</dt><dd>12:00 a 17:00 hs</dd></div>
+        <div class="horarios__off"><dt>Martes</dt><dd>Cerrado</dd></div>
+      </dl>
+      <div class="mapa">
+        <svg viewBox="0 0 400 240" role="img" aria-label="Mapa: El Bohemio en la esquina de Donado y La Pampa, sobre el Parque Donado Holmberg">
+          <rect width="400" height="240" fill="#FBF6EE"/>
+          <rect x="150" y="0" width="70" height="240" fill="#CFE3D3"/>
+          <g fill="#2A1F17" opacity=".12"><rect x="10" y="10" width="120" height="70" rx="6"/><rect x="10" y="150" width="120" height="80" rx="6"/><rect x="240" y="10" width="150" height="70" rx="6"/><rect x="240" y="150" width="150" height="80" rx="6"/></g>
+          <rect x="0" y="95" width="400" height="40" fill="#fff"/>
+          <rect x="130" y="0" width="22" height="240" fill="#fff"/>
+          <rect x="218" y="0" width="22" height="240" fill="#fff"/>
+          <text x="300" y="120" font-family="Oswald, sans-serif" font-size="12" letter-spacing="2" fill="#2A1F17">LA PAMPA</text>
+          <text x="141" y="215" font-family="Oswald, sans-serif" font-size="11" letter-spacing="2" fill="#2A1F17" transform="rotate(-90 141 215)">DONADO</text>
+          <text x="185" y="40" font-family="Instrument Sans, sans-serif" font-size="10" fill="#145F4A" text-anchor="middle">Parque</text>
+          <text x="185" y="53" font-family="Instrument Sans, sans-serif" font-size="10" fill="#145F4A" text-anchor="middle">Donado</text>
+          <text x="185" y="66" font-family="Instrument Sans, sans-serif" font-size="10" fill="#145F4A" text-anchor="middle">Holmberg</text>
+          <circle cx="118" cy="83" r="17" fill="#B04E36"/><text x="118" y="88" font-family="Ultra, serif" font-size="15" fill="#FBF6EE" text-anchor="middle">B</text>
+        </svg>
+        <div class="mapa__pie"><b>Donado 1802</b> esquina La Pampa · Villa Urquiza <a href="https://www.google.com/maps/search/?api=1&amp;query=El+Bohemio+Donado+1802+Buenos+Aires" target="_blank" rel="noopener">Cómo llegar</a></div>
+      </div>
+    </div>
+    <div class="reservar__form" data-r>
+      <div data-kit="reservas"></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="pie">
+  <div class="wrap pie__grid">
+    <div class="pie__marca">
+      <img src="img/logo.png" alt="El Bohemio" width="538" height="92" loading="lazy">
+      <p>Bar &amp; Restaurante · Desde 2014</p>
+    </div>
+    <div><h3>Dónde</h3><p>Donado 1802, esquina La Pampa<br>Villa Urquiza · DoHo</p></div>
+    <div><h3>Horarios</h3><p>Lun, Mié a Vie: 12:00 a 16:00 hs y 17:00 a 00:00 hs<br>Sáb: 12:00 a 00:00 hs · Dom: 12:00 a 17:00 hs<br>Martes cerrado</p></div>
+    <div><h3>Hablemos</h3><p><a href="https://wa.me/5491131611584" target="_blank" rel="noopener">WhatsApp 11-3161-1584</a><br><a href="https://www.instagram.com/bohemio1802/" target="_blank" rel="noopener">Instagram @bohemio1802</a></p></div>
+  </div>
+  <p class="pie__credito">Sitio desarrollado por <a href="https://alejomfernandez.com.ar" target="_blank" rel="noopener">Alejo Martín Fernández</a></p>
+</footer>
+
+<script src="js/main.js?v=1" defer></script>
+<script type="module" src="js/kit-init.js?v=1"></script>
+</body>
+</html>

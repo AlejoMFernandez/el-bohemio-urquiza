@@ -1,0 +1,158 @@
+{
+  "$schema": "https://raw.githubusercontent.com/AlejoMFernandez/kit-demos/main/docs/cliente.schema.json",
+  "id": "el-bohemio",
+  "nombre": "El Bohemio",
+  "pais": "AR",
+  "idioma": "es",
+  "modo": "demo",
+  "whatsapp": "5491131611584",
+  "instagram": "bohemio1802",
+  "prefijoPedido": "EB",
+  "supabase": { "url": "", "anonKey": "" },
+  "marca": {
+    "logo": "img/logo.png",
+    "logoPanel": "img/logo-panel.png",
+    "favicon": "img/favicon.png",
+    "logoClaro": "img/logo-panel.png",
+    "isotipo": "img/isotipo.png",
+    "colores": {
+      "fondo": "#FBF6EE",
+      "superficie": "#FFFFFF",
+      "texto": "#2A1F17",
+      "primario": "#145F4A",
+      "acento": "#B04E36",
+      "borde": "#E5D6C8"
+    },
+    "fuentes": {
+      "titulos": "'Fraunces', Georgia, serif",
+      "texto": "'Instrument Sans', system-ui, sans-serif",
+      "googleFonts": "Fraunces:opsz,wght@9..144,700;9..144,900&family=Instrument+Sans:wght@400;600;700&family=Caveat+Brush"
+    },
+    "estilo": { "forma": "pildora", "sombra": "suave", "borde": "1.5px", "mayusculas": false }
+  },
+  "modulos": { "carta": true, "carrito": true, "reservas": true, "admin": true },
+  "horarios": {
+    "lun": [["12:00", "16:00"], ["17:00", "00:00"]],
+    "mar": [],
+    "mie": [["12:00", "16:00"], ["17:00", "00:00"]],
+    "jue": [["12:00", "16:00"], ["17:00", "00:00"]],
+    "vie": [["12:00", "16:00"], ["17:00", "00:00"]],
+    "sab": [["12:00", "00:00"]],
+    "dom": [["12:00", "17:00"]]
+  },
+  "reservas": {
+    "capacidad": 70,
+    "maxPersonas": 10,
+    "anticipacionMin": 60,
+    "diasAdelante": 30,
+    "duracionMin": 120,
+    "cerrados": [],
+    "servicios": [
+      { "id": "mediodia", "nombre": "Mediodía", "dias": ["lun", "mie", "jue", "vie", "sab", "dom"],
+        "tandas": [{ "nombre": "Mediodía", "turnos": ["12:00", "12:30", "13:00", "13:30", "14:00", "14:30"] }] },
+      { "id": "noche", "nombre": "Noche", "dias": ["lun", "mie", "jue", "vie", "sab"],
+        "tandas": [{ "nombre": "Noche", "turnos": ["19:30", "20:00", "20:30", "21:00", "21:30", "22:00", "22:30"] }] },
+      { "id": "noche-12", "nombre": "Noche del 12", "fechas": ["2026-11-12"],
+        "tandas": [{ "nombre": "Noche del 12 · degustación", "turnos": ["19:00"], "capacidad": 30 }] }
+    ],
+    "extras": [
+      { "id": "vereda", "label": "Si se puede, en la vereda" },
+      { "id": "festejo", "label": "Venimos a festejar algo" }
+    ]
+  },
+  "pedidos": {
+    "salidas": ["whatsapp", "mercadopago"],
+    "tipos": ["retiro"],
+    "envio": 0,
+    "minimo": 0,
+    "sinPrecio": "a_confirmar",
+    "retiroHoy": { "cadaMin": 30, "prepMin": 30, "asap": false }
+  },
+  "pagos": {
+    "mercadopago": { "endpoint": "https://kit-demos-amf.vercel.app/api/mp-preference", "modo": "sandbox" }
+  },
+  "cartaQR": { "pedir": false, "estilo": "marca", "textos": { "titulo": "Nuestra carta" } },
+  "destacados": [
+    { "id": "pizarra", "nombre": "Pizarra de hoy",
+      "campos": [
+        { "id": "titulo", "label": "Título de la pizarra" },
+        { "id": "precio", "label": "Precio del menú" },
+        { "id": "nota", "label": "Nota (días, horario, qué incluye)", "largo": true }
+      ],
+      "valores": { "titulo": "Menú ejecutivo", "precio": "Consultar", "nota": "Mediodías de lunes a viernes, menos los martes · 12:00 a 16:00 hs" } }
+  ],
+  "textos": {
+    "tuPedido": "Tu canasta",
+    "verPedido": "Ver canasta",
+    "agregar": "Sumar",
+    "agregado": "Sumado",
+    "carritoVacio": "Tu canasta está vacía.",
+    "carritoVacioSub": "Sumá algo del Mercado Bohemio y aparece acá.",
+    "confirmarReserva": "Guardame la mesa",
+    "reservaLista": "¡Mesa pedida!",
+    "reservaListaSub": "{personas} · {dia} a las {hora} hs. Te confirmamos por WhatsApp."
+  },
+  "carta": {
+    "categorias": [
+      { "id": "pizarra", "nombre": "Pizarra de hoy" },
+      { "id": "picar", "nombre": "Para picar" },
+      { "id": "mar", "nombre": "Del mar" },
+      { "id": "arroces", "nombre": "Arroces y pastas" },
+      { "id": "carnes", "nombre": "Carnes" },
+      { "id": "postres", "nombre": "Postres" },
+      { "id": "vermu", "nombre": "Vermú y tragos" },
+      { "id": "vinos", "nombre": "Vinos" },
+      { "id": "mercado", "nombre": "Mercado Bohemio" }
+    ],
+    "productos": [
+      { "id": "pz-lomo", "categoria": "pizarra", "nombre": "Lomo saltado con arroz", "descripcion": "Vegetales salteados, chiles y papas doradas", "precio": 30000, "foto": "img/carta/052.webp" },
+      { "id": "pz-sudado", "categoria": "pizarra", "nombre": "Sudado de pesca", "descripcion": "Receta del chef, entre Perú y Bolivia", "precio": null, "foto": "img/carta/056.webp" },
+      { "id": "pz-socarrat", "categoria": "pizarra", "nombre": "Arroz socarrat", "descripcion": "Anticuchera amarilla y calamar", "precio": null, "foto": "img/carta/036.webp" },
+      { "id": "pz-flan", "categoria": "pizarra", "nombre": "Flan casero", "descripcion": "Con dulce de leche y crema", "precio": null, "foto": "img/carta/029.webp" },
+
+      { "id": "tostones", "categoria": "picar", "nombre": "Tostones", "descripcion": "Crocantes, con crema de palta y ensaladilla de zanahoria, nabo y cilantro", "precio": null, "foto": "img/carta/010.webp", "etiquetas": ["veggie"] },
+      { "id": "croquetas", "categoria": "picar", "nombre": "Croquetas de choclo ahumado", "descripcion": "Las del Martini Week", "precio": null, "foto": "img/carta/022.webp", "etiquetas": ["casa"] },
+      { "id": "provo", "categoria": "picar", "nombre": "Provo crocante", "descripcion": "Tomates asados y rúcula", "precio": null, "foto": "img/carta/037.webp" },
+      { "id": "girgolas", "categoria": "picar", "nombre": "Gírgolas y polenta frita", "descripcion": "Rúcula, miel, yogurt de lima y almendras", "precio": null, "foto": "img/carta/053.webp", "etiquetas": ["veggie"] },
+      { "id": "tortilla", "categoria": "picar", "nombre": "Tortilla de papa", "descripcion": "", "precio": null },
+      { "id": "empanada", "categoria": "picar", "nombre": "Empanada de cordero", "descripcion": "", "precio": null },
+      { "id": "pollo-frito", "categoria": "picar", "nombre": "Pollo frito", "descripcion": "", "precio": null },
+      { "id": "mollejas", "categoria": "picar", "nombre": "Mollejas", "descripcion": "", "precio": null },
+
+      { "id": "ceviche", "categoria": "mar", "nombre": "Ceviche", "descripcion": "Pesca blanca, calamar, leche de tigre, maíz cancha, cebolla morada y boniato", "precio": null, "foto": "img/carta/050.webp", "etiquetas": ["casa"] },
+      { "id": "pesca", "categoria": "mar", "nombre": "Pesca del día", "descripcion": "Sellada, con papines, arvejas con manteca y demiglace de mar", "precio": null, "foto": "img/carta/054.webp" },
+      { "id": "sudado", "categoria": "mar", "nombre": "Sudado Bohemio", "descripcion": "Fusión de Perú y Bolivia, desde la infancia del chef", "precio": null, "foto": "img/carta/056.webp" },
+      { "id": "langostinos-limenos", "categoria": "mar", "nombre": "Langostinos limeños", "descripcion": "Cocina de autor con causa", "precio": null, "foto": "img/carta/057.webp" },
+      { "id": "langostinos", "categoria": "mar", "nombre": "Langostinos crocantes", "descripcion": "Con salsa verde", "precio": null, "foto": "img/carta/060.webp" },
+
+      { "id": "socarrat", "categoria": "arroces", "nombre": "Arroz socarrat", "descripcion": "Anticuchera amarilla y calamar clásico, para compartir", "precio": null, "foto": "img/carta/036.webp", "etiquetas": ["casa"] },
+      { "id": "risotto", "categoria": "arroces", "nombre": "Risotto de remolacha", "descripcion": "Cremoso y de color intenso", "precio": null, "foto": "img/carta/031.webp", "etiquetas": ["veggie"] },
+      { "id": "capelettis", "categoria": "arroces", "nombre": "Capelettis de calabaza", "descripcion": "Rellenos de osobuco, con la salsa de su cocción", "precio": null, "foto": "img/carta/032.webp" },
+      { "id": "sorrentinos", "categoria": "arroces", "nombre": "Sorrentinos de berenjena ahumada", "descripcion": "Con queso brie", "precio": null, "etiquetas": ["veggie"] },
+      { "id": "spaghetti", "categoria": "arroces", "nombre": "Spaghetti con langostinos", "descripcion": "Con huancaína", "precio": null },
+
+      { "id": "bife", "categoria": "carnes", "nombre": "Bife de chorizo 400 g", "descripcion": "Salsa verde, papas doradas y ensaladilla agridulce", "precio": null, "foto": "img/carta/043.webp" },
+      { "id": "lomo-saltado", "categoria": "carnes", "nombre": "Lomo saltado", "descripcion": "Vegetales, chiles y arroz: un clásico peruano con técnica china", "precio": 30000, "foto": "img/carta/052.webp" },
+      { "id": "milanesa", "categoria": "carnes", "nombre": "Milanesa", "descripcion": "", "precio": null },
+
+      { "id": "flan", "categoria": "postres", "nombre": "Flan casero", "descripcion": "Con dulce de leche y crema: no hace falta elegir equipo", "precio": null, "foto": "img/carta/029.webp" },
+
+      { "id": "lunfa", "categoria": "vermu", "nombre": "Vermú Lunfa", "descripcion": "Clásico o rosado spritz, con soda de sifón", "precio": null, "foto": "img/carta/058.webp", "etiquetas": ["casa"] },
+      { "id": "jarrita", "categoria": "vermu", "nombre": "Jarrita vermutera", "descripcion": "Para tres, en la vereda", "precio": null, "foto": "img/carta/045.webp" },
+      { "id": "coctel-dia", "categoria": "vermu", "nombre": "Cóctel del día", "descripcion": "", "precio": null, "foto": "img/carta/009.webp" },
+      { "id": "caipi", "categoria": "vermu", "nombre": "Caipirinha", "descripcion": "", "precio": null },
+      { "id": "mojito", "categoria": "vermu", "nombre": "Mojito", "descripcion": "", "precio": null },
+      { "id": "martini", "categoria": "vermu", "nombre": "Martini", "descripcion": "", "precio": null },
+
+      { "id": "pie-de-canto", "categoria": "vinos", "nombre": "Pie de Canto Chardonnay", "descripcion": "Gualtallary, prensa directa de racimo entero", "precio": null },
+      { "id": "la-grappe", "categoria": "vinos", "nombre": "Les Artistes · La Grappe", "descripcion": "Familia Cassone. Criolla y tempranillo, para tomar fresco", "precio": null },
+      { "id": "aruma", "categoria": "vinos", "nombre": "Aruma", "descripcion": "Bodegas Caro", "precio": null },
+
+      { "id": "m-fiambres", "categoria": "mercado", "nombre": "Tabla de fiambres", "descripcion": "Para llevar a casa", "precio": null },
+      { "id": "m-quesos", "categoria": "mercado", "nombre": "Selección de quesos", "descripcion": "Para llevar a casa", "precio": null },
+      { "id": "m-mixta", "categoria": "mercado", "nombre": "Tabla mixta para compartir", "descripcion": "Fiambres y quesos", "precio": null },
+      { "id": "m-capelettis", "categoria": "mercado", "nombre": "Capelettis de osobuco", "descripcion": "Listos para calentar", "precio": null, "foto": "img/carta/032.webp" },
+      { "id": "m-flan", "categoria": "mercado", "nombre": "Flan casero", "descripcion": "Con dulce de leche", "precio": null, "foto": "img/carta/029.webp" }
+    ]
+  }
+}
