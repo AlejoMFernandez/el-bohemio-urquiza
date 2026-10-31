@@ -346,9 +346,9 @@ html.js .tablero.visto .kit-item{animation:tiza .9s var(--ease) forwards;animati
 
 /* ---------- nosotros ---------- */
 .nosotros__grid{display:grid;grid-template-columns:minmax(0,1fr);gap:40px;align-items:center}
-.nosotros__foto{position:relative;margin:0;width:min(100%,460px);justify-self:center}
-.nosotros__foto img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:230px 230px 18px 18px}
-.sello{position:absolute;right:8px;bottom:24px;width:108px;height:108px;border-radius:50%;background:var(--ladrillo);color:var(--cal);border:4px solid var(--cal);display:flex;flex-direction:column;align-items:center;justify-content:center;transform:rotate(-10deg);animation:gira 18s linear infinite paused}
+.nosotros__foto{position:relative;margin:0;width:min(78%,320px);justify-self:center}
+.nosotros__foto img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;border-radius:230px 230px 18px 18px}
+.sello{position:absolute;right:-14px;bottom:24px;width:108px;height:108px;border-radius:50%;background:var(--ladrillo);color:var(--cal);border:4px solid var(--cal);display:flex;flex-direction:column;align-items:center;justify-content:center;transform:rotate(-10deg);animation:gira 18s linear infinite paused}
 .nosotros__foto.visto .sello{animation-play-state:running}
 @keyframes gira{from{transform:rotate(-10deg)}to{transform:rotate(350deg)}}
 .sello b{font:900 42px/1 var(--f-tit)}
@@ -357,41 +357,41 @@ html.js .tablero.visto .kit-item{animation:tiza .9s var(--ease) forwards;animati
 .datos li{display:flex;flex-direction:column;gap:4px;padding-top:12px;border-top:2px solid var(--madera)}
 .datos b{font:900 clamp(26px,4vw,38px)/1 var(--f-tit);color:var(--puerta)}
 .datos span{font-size:13.5px;line-height:1.35;color:var(--gris)}
-@media (min-width:900px){.nosotros__grid{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(48px,6vw,100px)}.nosotros__foto{width:100%;max-width:500px}.sello{width:136px;height:136px;right:-20px}.sello b{font-size:54px}}
+@media (min-width:900px){.nosotros__grid{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(48px,6vw,100px)}.nosotros__foto{width:100%;max-width:380px;justify-self:end}.sello{width:120px;height:120px;right:-24px}.sello b{font-size:48px}}
 
 /* ---------- reservar ---------- */
 .reservar{background:var(--revoque)}
-.reservar__grid{display:grid;grid-template-columns:minmax(0,1fr);gap:34px}
-.horarios{margin:0 0 26px;display:flex;flex-direction:column}
+.reservar__grid{display:grid;grid-template-columns:minmax(0,1fr);gap:36px}
+.reservar__ctas{display:flex;flex-wrap:wrap;gap:12px;margin:6px 0 30px}
+.horarios{margin:0;display:flex;flex-direction:column}
 .horarios div{display:flex;flex-direction:column;gap:2px;padding:12px 0;border-top:1px solid rgba(42,31,23,.18)}
 .horarios dt{font-weight:700;font-size:15.5px}
 .horarios dd{margin:0;font-size:15.5px}
 .horarios__off dd{color:var(--ladrillo);font-weight:700}
-.mapa{background:var(--cal);border:2px solid var(--madera);border-radius:18px;overflow:hidden}
-.mapa svg{display:block;width:100%;height:auto}
-.mapa__pie{display:flex;flex-wrap:wrap;gap:4px 12px;padding:14px 16px;font-size:15px;border-top:2px solid var(--madera)}
-.mapa__pie a{margin-left:auto;font-weight:700;color:var(--puerta)}
-.reservar__form{min-width:0}
+.mapa{background:var(--cal);border:2px solid var(--madera);border-radius:22px;overflow:hidden;display:flex;flex-direction:column}
+.mapa iframe{display:block;width:100%;height:320px;border:0;background:var(--revoque)}
+.mapa__pie{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:4px 12px;padding:10px 18px;font-size:15px;border-top:2px solid var(--madera)}
+.mapa__pie a{display:inline-flex;align-items:center;min-height:44px;font-weight:700;color:var(--puerta)}
 @media (min-width:900px){
-  .reservar__grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(40px,5vw,80px);align-items:start}
+  .reservar__grid{grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:clamp(40px,5vw,80px);align-items:stretch}
   .horarios div{flex-direction:row;justify-content:space-between;gap:20px}
-  .reservar__form{position:sticky;top:calc(var(--hdr) + 24px)}
+  .mapa{min-height:480px}
+  .mapa iframe{flex:1;height:auto;min-height:420px}
 }
 
 /* ---------- footer ---------- */
-.pie{background:var(--puerta);color:var(--cal);padding:clamp(56px,7vw,96px) 0 calc(28px + env(safe-area-inset-bottom))}
+.pie{background:var(--puerta);color:var(--cal);padding:clamp(56px,7vw,96px) 0 calc(96px + env(safe-area-inset-bottom))}
 .pie__grid{display:grid;grid-template-columns:minmax(0,1fr);gap:28px}
 .pie__marca img{width:220px;height:auto}
 .pie__marca p{margin:12px 0 0;font:500 13px/1 var(--f-cartel);letter-spacing:.2em;text-transform:uppercase;color:var(--rosa)}
 .pie h3{margin:0 0 8px;font:500 13px/1 var(--f-cartel);letter-spacing:.2em;text-transform:uppercase;color:var(--dorado)}
 .pie p{margin:0;font-size:15.5px;line-height:1.7}
 .pie a{color:var(--cal)}
-.pie__credito{margin:44px auto 0;padding:20px var(--pad) 0;max-width:calc(var(--max) + 2*var(--pad));border-top:1px solid rgba(251,246,238,.2);font-size:13px!important;color:rgba(251,246,238,.75)}
+.pie__credito{margin:clamp(48px,6vw,72px) auto 0;padding:24px var(--pad) 0;max-width:calc(var(--max) + 2*var(--pad));border-top:1px solid rgba(251,246,238,.2);font-size:13px!important;color:rgba(251,246,238,.75)}
 .pie__credito a{color:var(--cal)}
 @media (min-width:900px){.pie__grid{grid-template-columns:1.3fr 1fr 1.4fr 1fr;gap:40px}}
 
 /* ---------- kit ---------- */
-.reservar__form .kit-resv{font-size:16px}
 .kit-pop__box h2,.kit-pop__box h3{font-family:var(--f-tit)}
 .kit-fab{background:var(--puerta)!important;border-color:var(--puerta)!important}
 .kit-demo-pill{font-family:var(--f-txt)}
@@ -407,6 +407,7 @@ html.scroll-abajo .kit-demo-pill{opacity:0!important;pointer-events:none;transfo
 .kit-root input,.kit-root textarea,.kit-root select{font-size:16px!important}
 .mercado__estante .kit-add{min-height:44px}
 .mercado__estante .kit-step button{min-width:44px;min-height:44px}
-.mapa__pie a{display:inline-flex;align-items:center;min-height:44px;margin:-10px 0}
 @media (max-width:379px){.hero__pizarra-plato{font-size:18px}.hero__pizarra{padding:10px 12px}}
 @media (min-width:1600px){.hero__bajada{font-size:21px;max-width:600px}.hero__texto>*{max-width:720px}}
+
+.datos .estrella{color:#E0A526;font-size:.8em;vertical-align:.08em}

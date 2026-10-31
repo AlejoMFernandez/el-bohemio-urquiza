@@ -31,7 +31,7 @@
 <link rel="preload" href="img/hero-1440.webp" as="image" media="(min-width: 900px)">
 <link rel="stylesheet" href="css/fonts.css?v=1" data-kit-fonts>
 <link rel="stylesheet" href="kit/kit.css?v=1">
-<link rel="stylesheet" href="css/style.css?v=1">
+<link rel="stylesheet" href="css/style.css?v=2">
 </head>
 <body>
 
@@ -272,7 +272,7 @@
       <h2 class="titulo">Doce años en la esquina de Donado y La Pampa</h2>
       <p class="texto">Una casona reciclada en el corredor gastronómico de DoHo, con cocina abierta, salón art déco y una vereda que se llena. Nos destacamos por la atención: profesional, con una sonrisa y desde el corazón.</p>
       <ul class="datos">
-        <li><b>3.243</b><span>reseñas en Google</span></li>
+        <li><b>4,2 <span class="estrella" aria-hidden="true">★</span></b><span>en 3.243 reseñas de Google</span></li>
         <li><b>12</b><span>años en Urquiza</span></li>
         <li><b>DoHo</b><span>en la nota de La Nación sobre el corredor</span></li>
       </ul>
@@ -285,35 +285,23 @@
 <section class="sec reservar" id="reservar">
   <div class="wrap reservar__grid">
     <div class="reservar__info" data-r>
-      <p class="kicker">Reservas y horarios</p>
+      <p class="kicker">Reservas, horarios y cómo llegar</p>
       <h2 class="titulo">Tu mesa en la casona</h2>
-      <p class="texto">Elegí día, horario y cuántos son. Te confirmamos por WhatsApp.</p>
+      <p class="texto">Elegí día, horario y cuántos son: te confirmamos por WhatsApp.</p>
+      <div class="reservar__ctas">
+        <button class="btn btn--verde" type="button" data-kit-open="reservas">Reservá tu mesa</button>
+        <a class="btn btn--linea" href="https://wa.me/5491131611584" target="_blank" rel="noopener">Escribinos</a>
+      </div>
       <dl class="horarios">
         <div><dt>Lunes, miércoles, jueves y viernes</dt><dd>12:00 a 16:00 hs · 17:00 a 00:00 hs</dd></div>
         <div><dt>Sábado</dt><dd>12:00 a 00:00 hs</dd></div>
         <div><dt>Domingo</dt><dd>12:00 a 17:00 hs</dd></div>
         <div class="horarios__off"><dt>Martes</dt><dd>Cerrado</dd></div>
       </dl>
-      <div class="mapa">
-        <svg viewBox="0 0 400 240" role="img" aria-label="Mapa: El Bohemio en la esquina de Donado y La Pampa, sobre el Parque Donado Holmberg">
-          <rect width="400" height="240" fill="#FBF6EE"/>
-          <rect x="150" y="0" width="70" height="240" fill="#CFE3D3"/>
-          <g fill="#2A1F17" opacity=".12"><rect x="10" y="10" width="120" height="70" rx="6"/><rect x="10" y="150" width="120" height="80" rx="6"/><rect x="240" y="10" width="150" height="70" rx="6"/><rect x="240" y="150" width="150" height="80" rx="6"/></g>
-          <rect x="0" y="95" width="400" height="40" fill="#fff"/>
-          <rect x="130" y="0" width="22" height="240" fill="#fff"/>
-          <rect x="218" y="0" width="22" height="240" fill="#fff"/>
-          <text x="300" y="120" font-family="Oswald, sans-serif" font-size="12" letter-spacing="2" fill="#2A1F17">LA PAMPA</text>
-          <text x="141" y="215" font-family="Oswald, sans-serif" font-size="11" letter-spacing="2" fill="#2A1F17" transform="rotate(-90 141 215)">DONADO</text>
-          <text x="185" y="40" font-family="Instrument Sans, sans-serif" font-size="10" fill="#145F4A" text-anchor="middle">Parque</text>
-          <text x="185" y="53" font-family="Instrument Sans, sans-serif" font-size="10" fill="#145F4A" text-anchor="middle">Donado</text>
-          <text x="185" y="66" font-family="Instrument Sans, sans-serif" font-size="10" fill="#145F4A" text-anchor="middle">Holmberg</text>
-          <circle cx="118" cy="83" r="17" fill="#B04E36"/><text x="118" y="88" font-family="Ultra, serif" font-size="15" fill="#FBF6EE" text-anchor="middle">B</text>
-        </svg>
-        <div class="mapa__pie"><b>Donado 1802</b> esquina La Pampa · Villa Urquiza <a href="https://www.google.com/maps/search/?api=1&amp;query=El+Bohemio+Donado+1802+Buenos+Aires" target="_blank" rel="noopener">Cómo llegar</a></div>
-      </div>
     </div>
-    <div class="reservar__form" data-r>
-      <div data-kit="reservas"></div>
+    <div class="mapa" data-r>
+      <iframe src="https://www.google.com/maps?q=El+Bohemio,+Donado+1802,+Villa+Urquiza,+Buenos+Aires&amp;z=16&amp;output=embed" title="Mapa: El Bohemio, Donado 1802 esquina La Pampa, Villa Urquiza" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      <div class="mapa__pie"><span><b>Donado 1802</b> esquina La Pampa · Villa Urquiza</span><a href="https://www.google.com/maps/dir/?api=1&amp;destination=El+Bohemio+Donado+1802+Buenos+Aires" target="_blank" rel="noopener">Cómo llegar</a></div>
     </div>
   </div>
 </section>
@@ -333,7 +321,7 @@
   <p class="pie__credito">Sitio desarrollado por <a href="https://alejomfernandez.com.ar" target="_blank" rel="noopener">Alejo Martín Fernández</a></p>
 </footer>
 
-<script src="js/main.js?v=1" defer></script>
-<script type="module" src="js/kit-init.js?v=1"></script>
+<script src="js/main.js?v=2" defer></script>
+<script type="module" src="js/kit-init.js?v=2"></script>
 </body>
 </html>
